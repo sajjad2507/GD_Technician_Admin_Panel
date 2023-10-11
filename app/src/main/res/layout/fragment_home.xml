@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".fragments.Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="45dp"
+        android:paddingBottom="0dp">
+
+
+
+        <!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+        <!--            android:id="@+id/circularProgressBar"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            app:cpb_background_progressbar_color="#424C88"-->
+        <!--            app:cpb_background_progressbar_width="5dp"-->
+        <!--            app:cpb_progress_direction="to_right"-->
+        <!--            app:cpb_progressbar_color="#3f51b5"-->
+        <!--            app:cpb_progressbar_width="10dp"-->
+        <!--            app:cpb_round_border="false" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/techProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#0D2323"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/howYou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Here's how you're doing"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/technicainCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/howYou"
+                android:layout_marginTop="16dp"
+                android:text="Technicain Category"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/techCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/howYou"
+                android:text= "Plumber"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/technicainCategory"
+                android:layout_marginTop="16dp"
+                android:text="Orders"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/technicainCategory"
+                android:text= "15 orders"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/joiningDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderCompleted"
+                android:layout_marginTop="16dp"
+                android:text="Joining date"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/techJoiningDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/orderCompleted"
+                android:text="Sep 15, 2023"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/orderCompletionPro"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/joiningDate"
+                    app:cpb_background_progressbar_color="#FFFFFF"
+                    android:layout_marginStart="24dp"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#39D016"
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/ratingPro"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/joiningDate"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="44dp"
+                app:cpb_background_progressbar_color="#FFFFFF"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="#39D016"
+                app:cpb_progressbar_width="10dp"
+                app:cpb_round_border="false" />
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/ratingPro1"
+                    android:layout_width="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_below="@id/joiningDate"
+                    app:cpb_background_progressbar_color="#FFFFFF"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#39D016"
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+
+            <TextView
+                android:id="@+id/orderCompletionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderCompletionPro"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Order\nCompletion"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/positiveRatingTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderCompletionRate"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Positive \nRating"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/orderCompletionTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order\nCanclation"
+                android:textColor="@color/white"
+                android:layout_below="@id/ratingPro1"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/orderCompletionRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_above="@id/orderCompletionTxt"
+                android:layout_marginStart="40dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="0dp"/>
+
+
+            <TextView
+                android:id="@+id/positiveRatingRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/positiveRatingTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginBottom="26dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/orderCompletionRate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/orderCompletionTxt1"
+                android:layout_marginEnd="39dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="0dp"/>
+
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@id/techProgress">
+
+            <TextView
+                android:id="@+id/CategoryTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:text="Appointment Requests"
+                android:textColor="#616161"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/techCatRcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CategoryTxt" />
+
+            <TextView
+                android:id="@+id/homeSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:text="see all"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/CategoryTxt" />
+
+            <TextView
+                android:id="@+id/reviewTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:text="Clients Reviews"
+                android:textColor="#616161"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/techCatRcv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviewRcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:paddingEnd="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reviewTxt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/techImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="end"
+        android:scaleType="centerCrop"
+        android:src="@drawable/userprofile"
+        app:riv_border_color="#33BFBFBF"
+        app:riv_border_width="2dip"
+        app:riv_corner_radius="60dip"
+        app:riv_mutate_background="true" />
+
+
+    <TextView
+        android:id="@+id/homeTechnician"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Sajjad Ali"
+        android:textColor="#292929"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="#E6E6E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/homeMenu"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                app:tint="@color/mGreen" />
+
+
+            <ImageView
+                android:id="@+id/menuSearch"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/search"
+                app:tint="@color/mGray" />
+
+
+            <ImageView
+                android:id="@+id/menuAppointments"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/booked"
+                app:tint="@color/mGray" />
+
+
+            <ImageView
+                android:id="@+id/menuProfile"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/profile"
+                app:tint="@color/mGray" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

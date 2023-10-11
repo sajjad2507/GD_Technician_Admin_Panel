@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/techImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/userprofile"
+            app:riv_border_color="#33BFBFBF"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="60dip"
+            app:riv_mutate_background="true" />
+
+        <TextView
+            android:id="@+id/clientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="client name"
+            android:layout_toRightOf="@id/techImage"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/clientAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_toRightOf="@id/techImage"
+            android:layout_marginTop="38dp"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/clientReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text\ntext"
+            android:minLines="2"
+            android:maxLines="2"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/techImage"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/star"
+            android:layout_below="@id/clientReview"/>
+
+        <TextView
+            android:id="@+id/clientRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0"
+            android:textColor="#FFC107"
+            android:layout_below="@id/clientReview"
+            android:layout_toRightOf="@id/star"
+            android:layout_marginStart="4dp"/>
+
+        <TextView
+            android:id="@+id/reviewDate"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/clientReview"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="August 02, 2023"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/clientReview"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1EA100"
+            android:textAllCaps="true"
+            android:padding="8dp"
+            android:background="@drawable/edt_complete"
+            android:textSize="10sp"
+            android:text="Completed"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

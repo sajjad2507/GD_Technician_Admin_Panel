@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CategoryInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/your_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Category"
+            app:boxBackgroundMode="filled">
+
+            <AutoCompleteTextView
+                android:id="@+id/your_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt"
+                android:cursorVisible="false"
+                android:dropDownWidth="match_parent"
+                android:dropDownHeight="wrap_content"
+                android:dropDownVerticalOffset="10dp"
+                android:focusable="false"
+                android:inputType="none"
+                android:padding="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/your_input_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Sub Category"
+            app:boxBackgroundMode="filled">
+
+            <AutoCompleteTextView
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:id="@+id/your_input_field1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:dropDownWidth="match_parent"
+                android:dropDownHeight="wrap_content"
+                android:dropDownVerticalOffset="10dp"
+                android:focusable="false"
+                android:inputType="none"
+                android:padding="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/your_input_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Appointment Type"
+            app:boxBackgroundMode="filled">
+
+            <AutoCompleteTextView
+                android:id="@+id/your_input_field2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt"
+                android:cursorVisible="false"
+                android:dropDownWidth="match_parent"
+                android:dropDownHeight="wrap_content"
+                android:dropDownVerticalOffset="10dp"
+                android:focusable="false"
+                android:inputType="none"
+                android:padding="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/appointmentsSelector"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<!--        <com.google.android.material.chip.ChipGroup-->
+<!--            android:id="@+id/chip_group"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:chipSpacingHorizontal="8dp"-->
+<!--            app:chipSpacingVertical="8dp"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_margin="15dp"-->
+<!--            app:chipGroupStyle="@style/Widget.MaterialComponents.ChipGroup" />-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:gravity="top"
+            android:id="@+id/desTv"
+            android:padding="15dp"
+            android:background="@drawable/edt"
+            android:hint="Provide discription here"/>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

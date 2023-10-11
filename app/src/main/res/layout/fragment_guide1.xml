@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Onboard.Guide1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textStyle="bold"
+            android:textColor="@color/mGray"
+            android:textSize="22sp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="56dp"/>
+
+        <ImageView
+            android:id="@+id/guide1Img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/guideTag"
+            android:layout_below="@id/btnSkip"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/category" />
+
+        <TextView
+            android:id="@+id/guideTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find the Service by which you will serve the people"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="32dp"
+            android:layout_above="@id/nextBtn"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gstart"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="32dp"/>
+
+        <TextView
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textColor="@color/mGreen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="32dp"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
